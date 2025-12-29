@@ -1,89 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CARLOSCASA LIMITED</title>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #ffffff;
-      color: #000000;
+      box-sizing: border-box;
     }
 
-    .container {
-      max-width: 900px;
-      margin: 100px auto;
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+
+    .page {
+      max-width: 1000px;
+      margin: 80px auto;
       padding: 0 20px;
     }
 
-    h1 {
-      font-size: 32px;
-      font-weight: bold;
-      margin-bottom: 5px;
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 50px;
     }
 
-    .subtitle {
+    .header h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .header p {
       font-size: 16px;
-      margin-bottom: 30px;
+      color: #555;
     }
 
-    h2 {
+    /* Card Sections */
+    .card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 25px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    }
+
+    .card h2 {
       font-size: 20px;
-      margin-top: 30px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #333;
       margin-bottom: 10px;
     }
 
-    p {
-      font-size: 16px;
-      line-height: 1.7;
-      margin-bottom: 10px;
+    .info p strong {
+      font-weight: 600;
     }
 
+    /* Footer */
     .footer {
+      text-align: center;
       margin-top: 40px;
       font-size: 14px;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 28px;
+      }
     }
   </style>
 </head>
+
 <body>
 
-  <div class="container">
+  <div class="page">
 
-    <h1>CARLOSCASA LIMITED</h1>
-    <p class="subtitle">Private Company – United States</p>
+    <!-- Header -->
+    <div class="header">
+      <h1>CARLOSCASA LIMITED</h1>
+      <p>Private Company – United States</p>
+    </div>
 
-    <h2>Company Overview</h2>
-    <p>
-      CARLOSCASA LIMITED is a privately registered company operating in the United States.
-      The company is officially registered with the Internal Revenue Service (IRS) and
-      operates under an assigned Employer Identification Number (EIN).
-    </p>
+    <!-- Company Overview -->
+    <div class="card">
+      <h2>Company Overview</h2>
+      <p>
+        CARLOSCASA LIMITED is a privately registered company operating in the United States.
+        The company is officially registered with the Internal Revenue Service (IRS) and
+        operates under an assigned Employer Identification Number (EIN).
+      </p>
+    </div>
 
-    <h2>Registration Information</h2>
-    <p><strong>Entity Name:</strong> CARLOSCASA LIMITED</p>
-    <p><strong>Registered Authority:</strong> Internal Revenue Service (IRS)</p>
-    <p><strong>Mailing Address:</strong><br>
-       Cincinnati, OH 45999-0023<br>
-       United States
-    </p>
+    <!-- Registration Information -->
+    <div class="card info">
+      <h2>Registration Information</h2>
+      <p><strong>Entity Name:</strong> CARLOSCASA LIMITED</p>
+      <p><strong>Registered Authority:</strong> Internal Revenue Service (IRS)</p>
+      <p>
+        <strong>Mailing Address:</strong><br />
+        Cincinnati, OH 45999-0023<br />
+        United States
+      </p>
+    </div>
 
-    <h2>Legal Disclaimer</h2>
-    <p>
-      CARLOSCASA LIMITED is a private company and is not affiliated with, endorsed by,
-      or acting on behalf of the Internal Revenue Service (IRS) or the
-      U.S. Department of the Treasury.
-    </p>
+    <!-- Legal Disclaimer -->
+    <div class="card">
+      <h2>Legal Disclaimer</h2>
+      <p>
+        CARLOSCASA LIMITED is a private company and is not affiliated with, endorsed by,
+        or acting on behalf of the Internal Revenue Service (IRS) or the
+        U.S. Department of the Treasury.
+      </p>
+    </div>
 
-    <h2>Privacy Policy</h2>
-    <p>
-      This website does not collect or store personal user data.
-      Any information provided is for general informational purposes only.
-    </p>
+    <!-- Privacy Policy -->
+    <div class="card">
+      <h2>Privacy Policy</h2>
+      <p>
+        This website does not collect or store personal user data.
+        Any information provided is for general informational purposes only.
+      </p>
+    </div>
 
+    <!-- Footer -->
     <div class="footer">
       © 2025 CARLOSCASA LIMITED. All rights reserved.
     </div>
